@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Place from './Place';
+import style from '../../components/app/App.css';
 
 const PlaceList = ({ places }) => {
-  return places.map((place) => <Place key={place.id} {...place} />);
+  return (
+    <>
+    <h1 className={style.header}>GETAWAYZ</h1>
+  <ul className={style.list}>
+  {places.map((place) => <Place key={place.id} {...place} />)}
+  </ul>
+  </>
+  )
 };
 
 PlaceList.propTypes = {
