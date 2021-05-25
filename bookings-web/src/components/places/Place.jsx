@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from '../../components/app/App.css'
+import style from '../../components/app/App.css';
+
 
 const Place = ({
   name,
@@ -16,19 +17,19 @@ const Place = ({
 }) => {
   return (
     <ul className={style.place}>
-      <h1>{name}</h1>
-      <li><span className={style.description}>{description}</span></li>
-      <li>{location}</li>
-      <li>{pricePerNight}</li>
-      <div className={style.imageContainer}>
+        <h1>{name}</h1>
+        <li><span className={style.description}>{description}</span></li>
+        <li>{location}</li>
+        <li>{pricePerNight}</li>
+        <div className={style.imageContainer}>
         <img src={image} alt={name} />
-        <br></br>
+         <br></br>
         <img className={style.thumbnail} src={imageThumbnail} alt={name}/>
-      </div> 
-      <li>Max Guests: {maxGuests}</li>
-      <li>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>
-      {pool ? <li>Has a Pool!</li> : null}
-      {wifi ? <li>Free Wifi</li> : null}
+        </div> 
+        <li>Max Guests: {maxGuests}</li>
+        <li>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>
+        {pool ? <li>Has a Pool!</li> : null}
+        {wifi ? <li>Free Wifi</li> : null}
     </ul>
   );
 };

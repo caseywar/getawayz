@@ -14,6 +14,16 @@ body {
     box-shadow: 3px 3px 15px black;
 
 }
+.descriptionContainer {
+    text-align: center;
+    position: relative;
+    width: 600px;
+    height: 90px;
+    left: 50%;
+    top: 0%;
+    margin-left: -300px;
+
+}
 
 .list {
     list-style: none;
