@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Getaways container renders a list of places on the web page 1`] = `
+Array [
+  <ul
+    aria-label="places"
+    class="list"
+  />,
+]
+`;

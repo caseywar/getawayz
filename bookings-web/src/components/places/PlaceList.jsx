@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const PlaceList = ({ places }) => (
     <>
       <h1 className={style.header}>GETAWAYZ</h1>
-      <ul className={style.list}>
+      <ul className={style.list} aria-label="places">
           {places.map((place) => (
             <Link to={`/places/${place.id}`} key={place.id}>
                 <Place key={place.id} {...place} />
