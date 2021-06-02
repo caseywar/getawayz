@@ -12,6 +12,8 @@ describe('Getaways container', () => {
         )
 
 
+        screen.getByText('Loading...');
+
         const ul = await screen.findAllByRole( 'list', {name: 'places'});
     return waitFor(() => {
         expect(ul).toMatchSnapshot();

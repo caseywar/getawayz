@@ -5,7 +5,7 @@ import style from '../app/App.css';
 function PlaceDetails({ place }) {
     return (
         <div className={style.descriptionContainer}>
-            <div className={style.place}>
+            <div className={style.place} role="div" aria-label="placeDetail">
                 <h1>{place.name}</h1>
                 <li><span className={style.description}>{place.description}</span></li>
                 <li>{place.location}</li>
