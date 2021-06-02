@@ -1,5 +1,6 @@
 export const getPlaces = async () => {
-  const response = await fetch(`${process.env.BASE_URL}/places`);
+  //had to change the url to a normal url because the BASE_URL wouldnt work for testing
+  const response = await fetch('http://localhost:7890/api/v1/places');
   if (response.ok) {
     const result = await response.json();
     return result.map(
